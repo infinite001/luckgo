@@ -11,7 +11,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	r := *gin.Defaul()
+	r := *gin.Default()
 	r.GET("/ping", func(c *gin.Context){
 		c.JSON(http.StatusOK, gin.H{
 			"Message": "Pang",
