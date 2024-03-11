@@ -17,7 +17,7 @@ func main() {
 			"Message": "Pang",
 		})
 	})
-	r.Run()
+	//r.Run()
 
     http.HandleFunc("/", hello)
     http.ListenAndServe(":8080", nil)
